@@ -153,6 +153,7 @@ body {
   }
 }
 
+
 /* Services Section */
 .services {
   background-color: #f5f6fa;
@@ -192,6 +193,28 @@ body {
   font-size: 0.85rem;
   color: #555;
 }
+
+/* 🔹Responsive part added */
+@media (max-width: 992px) {
+  /* Tablet: 2 column */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  /* Mobile: 1 column */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .services h2 {
+    font-size: 1.5rem;
+  }
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
 
 /* Recommendations Section */
 .recommendations {
