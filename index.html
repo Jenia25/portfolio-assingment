@@ -3,257 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio - Jenia Akter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">Home</h1>
-    </div>
-  </header>
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Hi, I am <br><span>Jenia Akter</span></h1>
-        <p>Student of Computer Science & Technology. </p>
-        <a href="#contact" class="btn">Contact Me</a>
-        <div class="social">
-          <a href="#" <i class="fa-brands fa-linkedin-in fa-2x" ></i></a>
-          <a href="#" <i class="fa-brands fa-github fa-2x"></i></a>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center bg-orange-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Hi, I am <br><span class="text-orange-500">Jenia Akter</span>
+        </h1>
+        <p class="text-gray-600 mb-6 max-w-md mx-auto md:mx-0">
+          Student of Computer Science & Technology.
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-lg shadow hover:bg-orange-600 transition">
+          Contact Me
+        </a>
+        <div class="flex justify-center md:justify-start gap-4 mt-6 text-orange-500 text-2xl">
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="images/jenia.jpg" alt="Profile Photo">
+      <div class="flex-1">
+        <img src="images/jenia.jpg" alt="Profile" class="w-56 h-56 rounded-2xl border-4 border-orange-500 object-cover mx-auto">
       </div>
     </div>
   </section>
 
   <!-- Featured Projects -->
-  <section class="projects">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <p class="projects-subtext">Some of my recent work and case studies</p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="images/coffee.jpeg" alt="Project 1">
-          <h3>It's a simple website of a cafe.</h3>
-          <p>This is a simple coffee shop website created using only HTML and CSS as part of my class assignment. The site presents a clean and user-friendly layout with a welcoming home page, an attractive menu section showcasing various coffee items, and an about section describing the cafe.</p>
-          <a href="#">View</a>
+  <section class="min-h-screen flex items-center bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">Featured Projects</h2>
+      <p class="text-gray-600 mb-10">Some of my recent work and case studies</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="images/coffee.jpeg" class="h-48 w-full object-cover" alt="">
+          <div class="p-4">
+            <h3 class="font-semibold mb-2">Cafe Website</h3>
+            <p class="text-sm text-gray-600 mb-3">Simple coffee shop site using HTML & CSS.</p>
+            <a href="#" class="text-orange-500 font-medium">View</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="images/smarthome.jpg" alt="Project 2">
-          <h3>SmartHome Project. </h3>
-          <p>Our project “Smart Home” is a hardware-based system designed to make homes safer and more energy-efficient. It uses different types of sensors (like temperature, motion, gas/leakage, and light sensors) to automatically monitor the environment. The system can control home appliances, detect unusual activity, and send alerts for safety hazards. </p>
-          <a href="#">View</a>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="images/smarthome.jpg" class="h-48 w-full object-cover" alt="">
+          <div class="p-4">
+            <h3 class="font-semibold mb-2">SmartHome Project</h3>
+            <p class="text-sm text-gray-600 mb-3">Hardware project for smart automation & safety.</p>
+            <a href="#" class="text-orange-500 font-medium">View</a>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="images/tech.jpeg" alt="Project 3">
-          <h3>It'a a simple store Website.</h3>
-          <p>This is a simple ICT website named TechStore, created using HTML and CSS. The site showcases various technology products with a clean and organized layout, featuring sections like home, products, and contact. It demonstrates basic web design skills, including structured content, styled navigation, and appealing visuals.</p>
-          <a href="#">View</a>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="images/tech.jpeg" class="h-48 w-full object-cover" alt="">
+          <div class="p-4">
+            <h3 class="font-semibold mb-2">Tech Store</h3>
+            <p class="text-sm text-gray-600 mb-3">ICT store layout built with HTML & CSS.</p>
+            <a href="#" class="text-orange-500 font-medium">View</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- My Services Section -->
-<section class="services">
-  <div class="container">
-    <h2>My Services</h2>
-    <p class="section-subtext">
-      Here are some of the selected projects that showcase my passion.
-    </p>
-    <div class="services-grid">
-      <div class="service-card">
-       <a href="#" <i class="fa-brands fa-webflow fa-3x"></i></a>
-        <h3>Web Development</h3>
-        <p>I design and develop responsive websites using HTML, CSS, and JavaScript to create modern and user-friendly web experiences</p>
-      </div>
-      <div class="service-card">
-        <a href="#" <i class="fa-brands fa-apple fa-3x"></i></a>
-        <h3>App Development</h3>
-        <p>I build mobile applications for Android and iOS using cross-platform technologies to solve real-world problems.</p>
-      </div>
-      <div class="service-card">
-        <a href="#" <i class="fa-solid fa-database fa-3x"></i></a>
-        <h3>Database Management</h3>
-        <p>I design, implement, and maintain databases using MySQL and other DBMS for efficient data storage and retrieval</p>
-      </div>
-      <div class="service-card">
-        <a href="#" <i class="fa-solid fa-chart-diagram fa-3x"></i></a>
-        <h3>Programming & Algorithms</h3>
-        <p>I solve complex problems using languages like C, C++, and Python, focusing on algorithms and data structures</p>
-      </div>
-      <div class="service-card">
-       <a href="#" <i class="fa-solid fa-desktop fa-3x"></i></a>
-        <h3>Machine Learning & AI</h3>
-        <p>I explore AI and machine learning concepts to build smart applications and predictive models.</p>
-      </div>
-      <div class="service-card">
-        <a href="#" <i class="fa-solid fa-pen fa-3x"></i></a>
-        <h3>UI/UX Design</h3>
-        <p>I create intuitive and attractive designs for websites and apps, ensuring a smooth user experience</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Recommendations Section -->
-<section class="recommendations">
-  <div class="container">
-    <h2>Recommendations</h2>
-    <p class="section-subtext">
-      Here are some recommendations of various passion.
-    </p>
-    <div class="recommend-grid">
-      <div class="recommend-card">
-        <img src="images/user1.jpg" alt="" class="avatar">
-        <h3>Nusrat Jahan</h3>
-        <span class="role">Graphic Designer</span>
-        <div class="stars">★★★★★</div>
-        <h4>Great Quality!</h4>
-        <p>A creative professional who designs visual content to communicate ideas effectively.</p>
-      </div>
-      <div class="recommend-card">
-        <img src="images/user2.jpg" alt="" class="avatar">
-        <h3>Sayma Sarder</h3>
-        <span class="role">Web Developer</span>
-        <div class="stars">★★★★★</div>
-        <h4>Great Quality!</h4>
-        <p>A specialist who builds, designs, and maintains functional websites using coding and technologies.</p>
-      </div>
-      <div class="recommend-card">
-        <img src="images/user1.jpg" alt="" class="avatar">
-        <h3>Mariya Akter</h3>
-        <span class="role">App Developer</span>
-        <div class="stars">★★★★★</div>
-        <h4>Great Quality!</h4>
-        <p>A developer who creates user-friendly applications for mobile and desktop platforms.</p>
-      </div>
-      <div class="recommend-card">
-        <img src="images/user4.jpg" alt="" class="avatar">
-        <h3>Fariya Jahan</h3>
-        <span class="role">UI/UX Designer</span>
-        <div class="stars">★★★★★</div>
-        <h4>Great Quality!</h4>
-        <p>A designer who crafts intuitive and engaging interfaces to enhance user experience.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION SECTION -->
-<section class="education-section">
-  <div class="container">
-    <h2>Education</h2>
-    <p>Here are some of my educational qualifications.</p>
-
-    <div class="education-item">
-      <div class="edu-left">
-        <h3>Kazirpagla A.T Institute</h3>
-        <span class="edu-date">2019 - 2021</span>
-      </div>
-      <div class="edu-right">
-        <h4>Secondary School Certificate</h4>
-        <p>Successfully completed Secondary School Certificate (SSC) with strong academic performance.</p>
-      </div>
-    </div>
-
-
-    <div class="education-item">
-      <div class="edu-left">
-        <h3>Dhaka Mohila Polytechnic Institute</h3>
-        <span class="edu-date">2022 - 2025</span>
-      </div>
-      <div class="edu-right">
-        <h4>Diploma in Engineering</h4>
-        <p>Completed Diploma in Engineering with practical knowledge and technical expertise</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO SECTION -->
-<section class="portfolio-section">
-  <div class="container">
-    <h2>Portfolio</h2>
-    <p>Here are some of my selected projects.</p>
-
-    <div class="portfolio-grid">
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-      <div class="portfolio-item"><img src="images/portfolio1.jpg" alt="Portfolio"></div>
-    </div>
-  </div>
-</section>
-
-  <!-- BLOG SECTION -->
-  <section class="blog">
-    <h2>BLOG</h2>
-    <p>Here is some technical blog content that I have prepared recently.</p>
-    <div class="blog-cards">
-      <div class="card">
-        <img src="images/blog1.jpeg" alt="Blog 1">
-        <h3>How To Make Web Templates</h3>
-        <p>September 2025</p>
-      </div>
-      <div class="card">
-        <img src="images/blog.jpeg" alt="Blog 2">
-        <h3>How To Make Own Resume</h3>
-        <p>September 2025</p>
-      </div>
-      <div class="card">
-        <img src="images/blog2.jpeg" alt="Blog 3">
-        <h3>How To Make Food Website</h3>
-        <p>September 2025</p>
+  <!-- Services -->
+  <section class="min-h-screen flex items-center bg-orange-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">My Services</h2>
+      <p class="text-gray-600 mb-10">Here are some services I provide with passion.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i class="fa-brands fa-webflow text-orange-500 text-4xl mb-3"></i>
+          <h3 class="font-semibold mb-2">Web Development</h3>
+          <p class="text-sm text-gray-600">Responsive websites with HTML, CSS, JS.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i class="fa-brands fa-apple text-orange-500 text-4xl mb-3"></i>
+          <h3 class="font-semibold mb-2">App Development</h3>
+          <p class="text-sm text-gray-600">Cross-platform Android & iOS apps.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i class="fa-solid fa-database text-orange-500 text-4xl mb-3"></i>
+          <h3 class="font-semibold mb-2">Database Management</h3>
+          <p class="text-sm text-gray-600">MySQL & DBMS for data efficiency.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="about">
-    <div class="about-text">
-      <h2>ABOUT ME</h2>
-      <p>I am Jenia Akter, an enthusiastic and driven MERN (MongoDB, Express, React, Node.js) developer. Currently, I am a student in the Computer Science and Technology (CST) department, and alongside my studies, I am interning in MERN development, gaining valuable hands-on experience in web development and programming. </p>
-    </div>
-    <div class="about-img">
-      <img src="images/jenia.jpg" alt="Profile Picture">
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section class="contact">
-    <div class="contact-image">
-      <img src="images/contact.jpeg" alt="24/7 Service">
-    </div>
-    <div class="contact-info">
-      <h2>LET'S CONTACT</h2>
-      <p>Email: <a href="mailto:info@example.com">jeniaakter18@gmail.com</a></p>
-      <p>Phone: 01743342658</p>
-      <p>Location: Agargaon, Dhaka-1207</p>
-      <div class="social-icons">
-        <a href="#"><i class="fa-solid fa-phone"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+  <!-- About -->
+  <section class="min-h-screen flex items-center bg-white">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row gap-10 items-center">
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">ABOUT ME</h2>
+        <p class="text-gray-700">I am Jenia Akter, an enthusiastic MERN developer. Currently studying CST and interning in MERN development, gaining valuable web dev experience.</p>
+      </div>
+      <div class="flex-1">
+        <img src="images/jenia.jpg" alt="Profile" class="w-64 rounded-xl shadow-md mx-auto">
       </div>
     </div>
   </section>
 
-  <footer>
-     copy-right all reserved by jenia.
+  <!-- Contact -->
+  <section id="contact" class="min-h-screen flex items-center bg-orange-50">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1">
+        <img src="images/contact.jpeg" alt="Contact" class="rounded-lg shadow-md w-full max-w-sm mx-auto">
+      </div>
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">LET'S CONTACT</h2>
+        <p>Email: <a href="mailto:jeniaakter18@gmail.com" class="text-orange-500">jeniaakter18@gmail.com</a></p>
+        <p>Phone: 01743342658</p>
+        <p>Location: Agargaon, Dhaka-1207</p>
+        <div class="flex justify-center md:justify-start gap-4 mt-4 text-orange-500 text-2xl">
+          <a href="#"><i class="fa-solid fa-phone"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-500 text-white text-center py-4">
+    <p>&copy; All rights reserved by Jenia.</p>
   </footer>
 
-  </body>
-  </html>
+</body>
+</html>
 
